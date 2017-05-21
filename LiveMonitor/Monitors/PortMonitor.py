@@ -1,8 +1,7 @@
 import logging, threading, socket
 #the driving engine for port checks
-class PortMonitor:
+class PortMonitor(metaclass=MonitorRegistry):
     #need socket
-    __metaclass__ = MonitorRegistry
     status=[] #output variable of status at last check
     prev=[] #previous result, for comparison
     host="127.0.0.1" #the host to check

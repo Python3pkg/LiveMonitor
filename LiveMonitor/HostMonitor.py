@@ -1,6 +1,6 @@
 import logging, threading, subprocess, platform
 from netaddr import *
-from Monitor import *
+from .Monitor import *
 #the driving engine for host checks
 class HostMonitor(Monitor):
     #need netaddr

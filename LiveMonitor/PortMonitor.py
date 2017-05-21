@@ -1,5 +1,5 @@
 import logging, threading, socket
-from Monitor import *
+from .Monitor import *
 #the driving engine for port checks
 class PortMonitor(Monitor):
     #need socket

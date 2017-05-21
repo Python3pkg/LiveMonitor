@@ -1,5 +1,5 @@
 import logging, time, threading, json, subprocess
-from Monitor import *
+from .Monitor import *
 class LogMonitor(Monitor):
     #maybe find a library to parse more formats?
     status={}
